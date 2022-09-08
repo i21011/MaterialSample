@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     AppLayoutComponent,
     DashboardComponent,
-    ContactComponent
+    ContactComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
