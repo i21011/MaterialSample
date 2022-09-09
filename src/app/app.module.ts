@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DetailsComponent } from './details/details.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -35,10 +36,8 @@ import { environment } from '../environments/environment';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    
-   
-    
-  ],
+    HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
