@@ -1,9 +1,9 @@
 {
   "configVersion": 1,
-  "timestamp": 1662719685553,
+  "timestamp": 1662725926600,
   "appData": {
-    "version": "3.0.0",
-    "notes": "Sie werden jetzt auch über den Online/Offline-Status informiert."
+    "version": "4.0.0",
+    "notes": "Daten könne jetzt auch offline eingesehen werden."
   },
   "index": "https://i21011.github.io/MaterialSample/index.html",
   "assetGroups": [
@@ -66,7 +66,7 @@
         "https://i21011.github.io/MaterialSample/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.5bb881679f1db2f8.woff2",
         "https://i21011.github.io/MaterialSample/index.html",
         "https://i21011.github.io/MaterialSample/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.883d76c88a60913a.woff2",
-        "https://i21011.github.io/MaterialSample/main.bcdc74a507bcd6c8.js",
+        "https://i21011.github.io/MaterialSample/main.dfec1edd36364571.js",
         "https://i21011.github.io/MaterialSample/manifest.webmanifest",
         "https://i21011.github.io/MaterialSample/polyfills.45a7178ca07e32be.js",
         "https://i21011.github.io/MaterialSample/runtime.52c4d0edcd5ecd00.js",
@@ -94,7 +94,22 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "api",
+      "patterns": [
+        "https:\\/\\/api\\.chucknorris\\.io\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 1,
+      "maxAge": 432000000,
+      "timeoutMs": 3000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
   "hashTable": {
     "https://i21011.github.io/MaterialSample/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.b096d30475005681.woff2": "27786db7735f04a4d59ad023fd327d2dea51ae68",
     "https://i21011.github.io/MaterialSample/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.9c2d94669eef54eb.woff2": "5d62925fdd7ed8e80f206d095ed093994f13d276",
@@ -153,9 +168,9 @@
     "https://i21011.github.io/MaterialSample/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "https://i21011.github.io/MaterialSample/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.00086bcac4417b9f.woff2": "70810bf33663f990fe209514831d01b65cd13fe2",
     "https://i21011.github.io/MaterialSample/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.5bb881679f1db2f8.woff2": "fe5e3340fc98a4edde8aa11658488df1c2739b19",
-    "https://i21011.github.io/MaterialSample/index.html": "d17a26d8cb9a111d48b327d0e9f2dc4bbfb4d3b6",
+    "https://i21011.github.io/MaterialSample/index.html": "2ca28285b5592d858421d1e5c65d3dab0b100a9f",
     "https://i21011.github.io/MaterialSample/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.883d76c88a60913a.woff2": "aca31391d24fafe72c3dce356318d594e20261c1",
-    "https://i21011.github.io/MaterialSample/main.bcdc74a507bcd6c8.js": "1de10e4ad39230d8cef0098007c79e87684f140b",
+    "https://i21011.github.io/MaterialSample/main.dfec1edd36364571.js": "7612b5133d99bbdb68990759bb378f2a995dfea6",
     "https://i21011.github.io/MaterialSample/manifest.webmanifest": "31abed7c58fb560753c5b2bfc3de50985066fefb",
     "https://i21011.github.io/MaterialSample/polyfills.45a7178ca07e32be.js": "2971b81a2c6bae63e0fd6836fe4a9da727612c3d",
     "https://i21011.github.io/MaterialSample/runtime.52c4d0edcd5ecd00.js": "04a6ac8d8dd256b87773a6e760b1c26c162c440f",
