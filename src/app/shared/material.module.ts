@@ -13,6 +13,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -31,7 +33,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-
+    MatDialogModule,
+    MatSnackBarModule
   ]
 })
 export class MaterialModule { }
