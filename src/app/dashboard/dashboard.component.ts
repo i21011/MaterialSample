@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { ChucknorrisService } from '../chucknorris.service';
+import { Weather, WeatherForecastService } from '../weather-forecast.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,9 +11,11 @@ import { ChucknorrisService } from '../chucknorris.service';
 })
 export class DashboardComponent implements OnInit {
   /** Based on the screen size, switch from standard to one column per row */
-  jokeText ='';
+  jokeText = '';
+  weathers: Weather[] = [];
+
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    
+
     map(({ matches }) => {
       if (matches) {
         return [
@@ -32,11 +35,17 @@ export class DashboardComponent implements OnInit {
     })
   );
 
-  constructor(private breakpointObserver: BreakpointObserver, private chucknorris: ChucknorrisService) { }
+  constructor(private breakpointObserver: BreakpointObserver,
+    private chucknorris: ChucknorrisService,
+    private weatherForcastService: WeatherForecastService) { }
 
   ngOnInit() {
     this.chucknorris.loadJoke().subscribe(joke => {
       this.jokeText = joke.value;
-  });
-}
+    });
+
+    this.weatherForcastService.load().subscribe(weathers => {
+      this.weathers = weathers;
+    });
+  }
 }

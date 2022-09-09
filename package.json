@@ -7,7 +7,8 @@
     "build": "ng build --base-href https://i21011.github.io/MaterialSample/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "start:pwa": "ng build && http-server -p 8080 -c-1 dist/material-sample"
+    "start:pwa": "ng build && http-server -p 8080 -c-1 dist/material-sample",
+    "build:server": "ng build --output-path ../server/wwwroot"
   },
   "private": true,
   "dependencies": {
